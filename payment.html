@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Success</title>
+	 <link rel="stylesheet" href="style.css"/>   
+	<style>
+	*{
+		margin:0px;
+		padding: 0px;
+	}
+	.head_outer{
+	width: 100%;
+	/*position: fixed;*/
+	/*top: 0px;*/
+	height:150px;
+}
+
+.header{
+	height:150px;
+	width: 100%;
+	
+	 background-color:#961231;
+	float: left;
+	
+
+	
+	
+}
+
+.head{
+	height:100px;
+	width: 100%;
+	/*background-color:white;*/
+	float: left;
+	color:black ;
+	font-size: 25PX;
+}
+
+.logo{
+	height: 100px;
+	width: 25%;
+	/*background-color:red;*/
+	float: left;
+	margin-left: 530px;
+	margin-top: 10px;
+}
+
+.logo img{
+	width: 100%;
+}
+
+.btn{
+	height: 100px;
+	width: 25%;
+	/*background-color: yellow;*/
+	float:right;
+}
+
+
+
+
+.login{
+	height: 50px;
+	width: 70px;
+	/*background-color: red;*/
+	float: left;
+	margin-left: 100px;
+	font-size: 15px;
+	margin-top: 40px;
+	color:#C8CDCC;
+
+
+}
+.register{
+	height: 50px;
+	width: 70px;
+	/*background-color: red;*/
+	float: left;
+	/*margin-left: 5px;*/
+	font-size: 15px;
+	margin-top: 40px;
+	color:#C8CDCC;
+
+
+}
+.loc{
+	height: 50px;
+	width: 50px;
+	/*background-color: red;*/
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+
+
+}
+
+.loc img{
+	width: 100%;
+
+}
+
+.nav{
+	height:50px;
+	width:80%;
+	/*background-color:pink;*/
+	float: left;
+	margin-left: 15%;
+	/*margin-right: 10%;*/
+}
+
+
+
+
+.nav ul li{
+	list-style-type: none;
+	float: left;
+	font-size: 20px;
+	margin-left:80px;
+	/*margin-top: 25px;*/
+	/*background-color:white;*/
+	height:25px;
+	color:#C8CDCC;
+	font-family: calibri;
+	line-height: 40px;
+	text-decoration: none;
+
+
+	/*width: 100px;*/
+
+}
+
+.nav ul li:hover{
+	/*background-color:black;*/
+	color:black;
+}
+	
+.container{
+	height:600px;
+	width: 100%;
+	background-color: red;
+	float: left;
+	/*position: absolute;*/
+
+}
+
+.image img {
+	width: 100%;
+}
+
+
+.image{
+	height:600px;
+	width: 100%;
+	/*background-color: red;*/
+	float: left;
+}
+
+
+.main{
+	height: 400px;
+	width: 400px;
+	float: left;
+	position: absolute;
+	background-color:grey;
+	margin-left: 500px;
+	margin-top: 50px;
+	border:2px solid black;
+}
+
+	.input-std {
+	width: 90%;
+	margin-left: 20px;
+     }
+.input-half {
+	width: 40%;
+	float: left;
+	margin-left: 20px;
+
+     }
+
+.input-quarter {
+	width: 15%;
+	float: left;
+	margin-left: 20px;
+
+     }
+#cvc {
+	float: left;
+	margin-left: 20px;
+
+}
+
+</style>
+ </head>
+<body >
+<div class="head_outer">
+		<div class="header">
+					<div class="head">
+						<div class="logo">
+							<img src="images/logo.png">
+						</div>
+						<div class="btn">
+							<!-- <input type="button" name="register" value="Register" onclick="disp1()" id="bt1"> -->
+							<div class="login" onclick="disp1()">
+								<p>Login</p>
+							</div>
+							<div class="register" onclick="disp2()">
+								<p>Register</p>
+							</div>
+	
+							<!-- <input type="button" name="login" value="Login" onclick="disp2()" id="bt2"> -->
+							<div class="loc" >
+								<img src="images/location.png">
+							</div>
+
+							
+						</div>
+
+					</div>
+					
+					<div class="nav">
+						<ul>
+							<li onclick="show()">HOME</li>
+							<li>OUR STORY</li>
+							<li>FIND RESTAURANTS</li>
+							<li>NEWSLETTER</li>
+							<li>CONTACT US</li>
+
+							
+							
+						</ul>
+					</div>
+		</div>
+</div>
+
+<div class="container" >
+	<div class="image">
+	<img src="images/wall2.jpg">
+		
+	</div>
+
+	
+	   <div class="main">
+				<p style="color:#961231;font-size: 35px;"><b>Payments</b></p><hr/>
+				<form id="form_id" method="post" name="myform">		
+				<input type="text" class="input-std" id="name" placeholder="Cardholder's Name">
+				<input type="text" class="input-quarter" id="number" placeholder="4242" maxlength="4">
+				<input type="text" class="input-quarter" id="number" placeholder="4242" maxlength="4">
+				<input type="text" class="input-quarter" id="number" placeholder="4242" maxlength="4">
+				<input type="text" class="input-quarter" id="number" placeholder="4242" maxlength="4">
+				<input type="text" class="input-quarter" id="cvc" placeholder="CVC" maxlength="3">
+				<input type="text" class="input-quarter" id="exp-month" placeholder="MM" maxlength="2">
+				<input type="text" class="input-half" id="exp-year" placeholder="YYYY" maxlength="4">
+				<input type="button" value="Pay" id="submit" />
+				</form><br>
+				<a class="back" href="login.html">Back</a>
+	 	</div>
+</div> 
+</body>
+</html>

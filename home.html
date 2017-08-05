@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="home.js"></script>
+</head>
+<body>
+	<div class="head_outer">
+		<div class="header">
+					<div class="head">
+						<div class="logo">
+							<img src="images/logo.png">
+						</div>
+						<div class="btn">
+							<!-- <input type="button" name="register" value="Register" onclick="disp1()" id="bt1"> -->
+							<div class="login" onclick="disp1()">
+								<p>Register</p>
+							</div>
+							<div class="register" onclick="disp2()">
+								<p>Login</p>
+							</div>
+	
+							<!-- <input type="button" name="login" value="Login" onclick="disp2()" id="bt2"> -->
+							<div class="loc" >
+							<!-- <a href="restaurant.php"> -->
+								<img src="images/location.png" onclick="loading()" >
+								
+							<!-- </a> -->
+							</div>
+
+							
+						</div>
+
+					</div>
+					
+					<div class="nav">
+						<ul>
+							<li onclick="show()">HOME</li>
+							<li>OUR STORY</li>
+							<a href="restaurant.php"><li>FIND RESTAURANTS</li></a>
+							<li>NEWSLETTER</li>
+							<li>CONTACT US</li>
+
+							
+							
+						</ul>
+					</div>
+		</div>
+	</div>
+	<div class="back">
+
+			<div class="form_top1">
+				<div class="cross">
+					<img src="images/cross.png" onclick="hide1()">
+				</div>
+				<div class="photo">
+					<img src="images/Photo-icon.png">
+				</div>
+				<div class="form1">
+					<form method="post" action="register.php">
+						<table>
+							<tr>	
+								<td>Username:</td>
+							</tr>
+							<tr>
+								<td><input type="text" name="name" required="" placeholder="Username"></td>
+							</tr>
+							<tr>
+								<td>Email:</td>
+							</tr>
+							<tr>
+								<td><input type="email" name="email" required="" placeholder="Email"></td>
+							</tr>
+							<tr>
+								<td>Password:</td>
+							</tr>
+							<tr>
+								<td><input type="password" name="password" required="" placeholder="Password"></td>
+							</tr>
+							<tr>
+								<td>Mobile No.</td>
+							</tr>
+							<tr>
+								<td><input type="number" name="mobile" required="" placeholder="Mobile Number"></td>
+							</tr>
+							<!-- <tr>
+								<td><input type="file" name="file" required="" placeholder="Profile pic"></td>
+							</tr> -->
+							<tr>
+								<td><input type="submit" name="btn" value="Register" class="reg"></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div class="form_top2">
+				<div class="cross">
+					<img src="images/cross.png" onclick="hide2()">
+				</div>
+				<div class="photo">
+					<img src="images/Photo-icon.png">
+				</div>
+				<div class="form2">
+					<form method="post" action="login.php">
+						<table>
+							<tr>	
+								<td>Email:</td>
+							</tr>
+							<tr>
+							
+							<tr>
+								<td><input type="text" name="email" required="" placeholder="Enter  email"></td>
+							</tr>
+							<tr>	
+								<td>Password:</td>
+							</tr>
+							<tr>
+							<tr>
+								<td><input type="password" name="password" required="" placeholder="Password"></td>
+							</tr>
+							<tr>
+								<td>Forgot Password?</td>
+							</tr>
+							<tr>
+							
+								<td><input type="submit" name="log" value="Login" class="reg" ></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			
+		
+	</div>
+	
+		<div class="con_child1">
+		
+				<div class="image">
+
+					<img src="images/wall2.jpg" name="pic" >
+				</div>
+				<div class="text">
+					<p>There is no sincerer love than the  love of food.</p>
+				</div>
+				<div class="loader">
+					<!-- console.log(position.coords.latitude); -->
+				</div>
+				
+				
+				<div class="navig">
+					<div class="navig_child" onclick="scroll1()">
+						
+					</div>
+					<div class="navig_child" onclick="scroll2()"></div>
+					<div class="navig_child" onclick="scroll3()"></div>
+					<div class="navig_child" onclick="scroll4()"></div>
+				</div>
+				
+		</div>
+
+		<div class="con_child2">
+				
+			<div class="con2_child">
+					<div class="cap">
+							<p>Select your food at just the click of a button and make your life simpler.</p>	
+						
+					</div>
+					<div class="flow">
+						<img src="images/location.png">
+						<div class="disc">
+							<p>Switch on GPS</p>
+						</div>
+					</div>
+					<div class="flow">
+						<img src="images/arrow.png">
+					</div>
+					<div class="flow">
+						<img src="images/restaurant.png">
+						<div class="disc">
+							<p>Restaurant selected</p>
+						</div>
+
+					</div>
+					<div class="flow">
+						<img src="images/arrow.png">
+					</div>
+					<div class="flow">
+						<img src="images/menu.png">
+						<div class="disc">
+							<p>Select from wide range of menu</p>
+						</div>
+					</div>
+					<div class="flow">
+						<img src="images/arrow.png">
+					</div>
+					<div class="flow">
+						<img src="images/cart.png">
+						<div class="disc">
+							<p>Add dishes to cart</p>
+						</div>
+					</div>
+					<div class="flow">
+						<img src="images/arrow.png">
+					</div>
+					<div class="flow">
+						<img src="images/payment.png">
+						<div class="disc">
+							<p>Make easy payments</p>
+						</div>
+					</div>
+			</div>
+
+				
+					
+		</div>
+		<div class="new"></div>
+
+		
+				
+			<div class="con_child3">
+				<hr  width="1000" color="#5B5D60" id="line1">
+				<div class="form_area">
+
+						<caption><center>Subscribe to our Newsletter</center></caption>
+						
+						<form name="feed" id="form1">
+							<table>
+								
+								<tr>
+									
+									<td><input type="email" name="email" placeholder="Enter email" class ="sub"></></td>
+									<td><input type="text" name="city" placeholder="Enter your city" class ="sub"></></td>
+									<td><input type="submit" name="submit" value="Sign Up now" class ="sub1"></td>
+								</tr>
+
+								
+							</table>
+						</form>
+				</div>
+
+			</div>
+			<div class="con_child4">
+						<hr  width="1000" color="#5B5D60" id="line1">
+						
+				<div class="con">
+					<li><b>Popular cities</b></li>
+					<br>
+					<li>Mumbai</li>
+					<li>Chennai</li>
+					<li>Kolkata</li>
+					<li>Delhi</li>
+					<li>Bangalore</li>
+					<li>Hydrabad</li>
+					<li>Lucknow</li>
+					<li>Patna</li>
+					<li>Jaipur</li>
+					<li>Chandigarh</li>
+				</div>
+				<div class="con">
+					<li><b>Popular cuisines</b></li>
+					<br>
+					<li>Biryani in Hydrabad</li>
+					<li>Ice cream in Bangalore</li>
+					<li>Chaat items in Lucknow</li>
+					<li>Sea food in Mumbai</li>
+					<li>Fish in Kolkata</li>
+					<li>Dosa in Chennai</li>
+					<li>Cakes in Mumbai</li>
+					<li>Cakes in Bangalore</li>
+				</div>
+				<div class="con">
+					<li><b>Popular Restaurants</b></li>
+					<br>
+					<li>Leaping Caravan</li>
+					<li>Domino's Mumbai</li>
+					<li>Mojo Pizza</li>
+					<li>10 Downing Street</li>
+					<li>Organic Express</li>
+					<li>Haldiram</li>
+					<li>Biryani Pot</li>
+				</div>
+
+				
+				<hr  width="1000" color="#5B5D60" id="line1">
+			</div>
+			<div class="con_child5">
+				<div class="con5_">
+					
+
+					<p>Get in touch</p>
+					<div class="con51">
+						<img src="images/fb.png">
+					</div>
+					<div class="con51">
+						<img src="images/twitter.png">
+					</div>
+					<div class="con51">
+						<img src="images/insta.png">
+					</div>
+					<div class="con51">
+						<img src="images/snapchat.png">
+					</div>					
+
+
+				</div>
+				
+			</div>
+
+			<div class=footer>
+				<div class=foot1>
+					<div class=f11>
+						<p>2017 foozito
+						</p>
+					</div>
+					<div class=f12>
+						<p>Privacy Policy|Terms and Conditions|Accessibilty|Contact Us|Photos Credits</p>
+					</div>
+					
+					
+				</div>
+				<div class=foot2>
+					<div class=f21>
+						<img src="images\tweet.png">
+					</div>
+					<div class=f22>
+						<p>Follow@foozito on Twitter</p>
+					</div>
+					<div class=f23>
+						<p>(#foozito)</p>
+					</div>
+
+				</div>
+			</div>
+		
+
+	
+
+</body>
+</html> 

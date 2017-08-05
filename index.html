@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Custom Shopping Cart Layout - SpyreStudios Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://spyrestudios.com/favicon.ico">
+  <link rel="icon" href="http://spyrestudios.com/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <div class="head_outer">
+    <div class="header">
+          <div class="head">
+            <div class="logo">
+              <img src="images/logo.png">
+            </div>
+            <div class="btn">
+              <!-- <input type="button" name="register" value="Register" onclick="disp1()" id="bt1"> -->
+              <div class="login" onclick="disp1()">
+                <p>Login</p>
+              </div>
+              <div class="register" onclick="disp2()">
+                <p>Register</p>
+              </div>
+  
+              <!-- <input type="button" name="login" value="Login" onclick="disp2()" id="bt2"> -->
+              <div class="loc" >
+                <img src="images/location.png">
+              </div>
+
+              
+            </div>
+
+          </div>
+          
+          <div class="nav">
+            <ul>
+              <li onclick="show()">HOME</li>
+              <li>OUR STORY</li>
+              <li>FIND RESTAURANTS</li>
+              <li>NEWSLETTER</li>
+              <li>CONTACT US</li>
+
+              
+              
+            </ul>
+          </div>
+    </div>
+</head>
+
+<body>
+  <div id="w">
+    <header id="title">
+      <h1>Shopping Cart </h1>
+    </header>
+    <div id="page">
+      <table id="cart">
+        <thead>
+          <tr>
+            <th class="first">S.no</th>
+            <th class="second">Qty</th>
+            <th class="third">Product</th>
+            <th class="fourth">Line Total</th>
+            <th class="fifth">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- shopping cart contents -->
+          <tr class="productitm">
+            <!-- http://www.inkydeals.com/deal/ginormous-bundle/ -->
+            <td>1</td>
+            <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+            <td>Pizza</td>
+            <td>Rs480.00</td>
+            <td><span class="remove"><img src="images/trash.png" alt="X"></span></td>
+          </tr>
+          <tr class="productitm">
+            <!-- http://www.amazon.com/Stuff-My-Cat-The-Book/dp/0811855384 -->
+            <td>2</td>
+            <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+            <td>Pasta</td>
+            <td>Rs250.00</td>
+            <td><span class="remove"><img src="images/trash.png" alt="X"></span></td>
+          </tr>
+          <tr class="productitm">
+            <!-- http://www.amazon.com/SpongeBob-SquarePants-The-First-Episodes/dp/B002DYJTVW -->
+            <td>3</td>
+            <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+            <td>Burger</td>
+            <td>Rs75.00</td>
+            <td><span class="remove"><img src="images/trash.png" alt="X"></span></td>
+          </tr>
+          <tr class="productitm">
+            <!-- http://www.barnesandnoble.com/w/javascript-and-jquery-david-sawyer-mcfarland/1100405042 -->
+            <td>4</td>
+            <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+            <td>Lasagne</td>
+            <td>Rs275.00</td>
+            <td><span class="remove"><img src="images/trash.png" alt="X"></span></td>
+          </tr>
+          
+          <!-- tax + subtotal -->
+          <tr class="extracosts">
+            <td class="light">Tax</td>
+            <td colspan="2" class="light"></td>
+            <td>Rs35.00</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr class="totalprice">
+            <td class="light">Total:</td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2"><span class="thick">Rs1115.00</span></td>
+          </tr>
+          
+          <!-- checkout btn -->
+          <tr class="checkoutrow">
+            <td colspan="5" class="checkout"><button id="submitbtn">Checkout Now!</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
